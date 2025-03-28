@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/73d0fb8acd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="RainyDays_Logo.png" alt="Rainy Days Logo" class="logo" />
+      </a>
+      <div class="header-container">
+        <input type="text" placeholder="Search for products..." id="search" />
+      </div>
+      <div class="header-icons">
+        <a href="construction.html" class="icon-container">
+          <i class="fa-solid fa-circle-user"></i>
+          <span>My account</span>
+        </a>
+        <a href="cart.html" class="icon-container">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>My cart</span>
+        </a>
+      </div>
+    </header>
+    <nav>
+      <!-- <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <label for="menu-toggle" class="close">&#10006;</label> -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Women</a></li>
+        <li><a href="products.html">Men</a></li>
+        <li><a href="products.html">SALE</a></li>
+        <li><a href="index.html">About us</a></li>
+      </ul>
+    </nav>
+    <main class="products-page">
+      <h1>Men's Collection</h1>
+      <div class="dropdown">
+        <label for="sortBy">Sort by</label>
+        <select name="Sort by" id="sortBy">
+          <option value="popular">Most popular</option>
+          <option value="size">Newest</option>
+          <option value="lowPrice">Price: Low to high</option>
+          <option value="highPrice">Price: High to low</option>
+        </select>
+        <label for="filterBy">Filter</label>
+        <select name="filter" id="filterBy">
+          <option value="all">Show all</option>
+          <option value="new">New arrivals</option>
+          <option value="sale">On Sale</option>
+        </select>
+      </div>
+      <!-- Filter må være avkryssbar, Sort by kan du bare velge en -->
+      <p>Showing 6 out of 56 products</p>
+
+      <div class="product-grid">
+        <!-- Redwood Jacket -->
+        <div class="product">
+          <div class="image-container">
+            <img
+              src="RainyDays_Jacket2.jpg"
+              alt="Redwood Jacket"
+              class="product-img"
+            />
+          </div>
+          <div class="product-info">
+            <a href="ProductDetails.html" class="product-details"
+              >Redwood Jacket</a
+            >
+            <p>Light jacket with 2 layers and...</p>
+            <a href="ProductDetails.html" class="see-more">See more...</a>
+            <div class="price-dot">
+              <div class="color-dots">
+                <span class="dot" style="background-color: #94b9af"></span>
+                <span class="dot" style="background-color: #f90a0a"></span>
+                <span class="dot" style="background-color: #000"></span>
+                <span class="dot" style="background-color: #d4d8dd"></span>
+              </div>
+              <a href="productDetails.html" class="price">34$</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Everglade Jacket (SALE) -->
+        <div class="product">
+          <div class="image-container">
+            <img
+              src="RainyDays_Jacket3.jpg"
+              alt="Everglade Jacket"
+              class="product-img"
+            />
+          </div>
+          <div class="product-info">
+            <a href="ProductDetails.html" class="product-details"
+              >Everglade Jacket</a
+            >
+            <p>Jacket with a light layer...</p>
+            <a href="ProductDetails.html" class="see-more">See more...</a>
+            <div class="price-dot">
+              <div class="color-dots">
+                <span class="dot" style="background-color: #922929"></span>
+                <span class="dot" style="background-color: #1b8a68"></span>
+              </div>
+              <div class="sale-pricing">
+                <a href="productDetails.html" class="old-price">38$</a>
+                <span class="new-price">NEW PRICE</span>
+                <a href="productDetails.html" class="sale">28$</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rushmore Jacket -->
+        <div class="product">
+          <div class="image-container">
+            <img
+              src="RainyDays_Jacket7.jpg"
+              alt="Rushmore Jacket"
+              class="product-img"
+            />
+          </div>
+          <div class="product-info">
+            <a href="ProductDetails.html" class="product-details"
+              >Rushmore Jacket</a
+            >
+            <p>Fleece jacket with the latest...</p>
+            <a href="ProductDetails.html" class="see-more">See more...</a>
+            <div class="price-dot">
+              <div class="color-dots">
+                <span class="dot" style="background-color: #107056"></span>
+                <span class="dot" style="background-color: #574b4b"></span>
+                <span class="dot" style="background-color: #521d97"></span>
+              </div>
+              <a href="productDetails.html" class="price">32$</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big Bend Jacket -->
+        <div class="product">
+          <div class="image-container">
+            <img
+              src="RainyDays_Jacket1.jpg"
+              alt="Big Bend Jacket"
+              class="product-img"
+            />
+          </div>
+          <div class="product-info">
+            <a href="ProductDetails.html" class="product-details"
+              >Big Bend Jacket</a
+            >
+            <p>Waterproof jacket for a sea...</p>
+            <a href="ProductDetails.html" class="see-more">See more...</a>
+            <div class="price-dot">
+              <div class="color-dots">
+                <span class="dot" style="background-color: #f4d35e"></span>
+                <span class="dot" style="background-color: #43aa8b"></span>
+              </div>
+              <a href="productDetails.html" class="price">56$</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Canyon Jacket (SALE) -->
+        <div class="product">
+          <div class="image-container">
+            <img
+              src="RainyDays_Jacket4.jpg"
+              alt="Canyon Jacket"
+              class="product-img"
+            />
+          </div>
+          <div class="product-info">
+            <a href="ProductDetails.html" class="product-details"
+              >Canyon Jacket</a
+            >
+            <p>Waterproof jacket with the...</p>
+            <a href="ProductDetails.html" class="see-more">See more...</a>
+            <div class="price-dot">
+              <div class="color-dots">
+                <span class="dot" style="background-color: #5869ae"></span>
+                <span class="dot" style="background-color: #9a4646"></span>
+              </div>
+              <div class="sale-pricing">
+                <a href="productDetails.html" class="old-price">38$</a>
+                <span class="new-price">NEW PRICE</span>
+                <a href="productDetails.html" class="sale">28$</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Katmai Jacket -->
+        <div class="product">
+          <div class="image-container">
+            <img
+              src="RainyDays_Jacket6.jpg"
+              alt="Katmai Jacket"
+              class="product-img"
+            />
+          </div>
+          <div class="product-info">
+            <a href="ProductDetails.html" class="product-details"
+              >Katmai Jacket</a
+            >
+            <p>3 layer jacket with the latest...</p>
+            <a href="ProductDetails.html" class="see-more">See more...</a>
+            <div class="price-dot">
+              <div class="color-dots">
+                <span class="dot" style="background-color: #c9a523"></span>
+                <span class="dot" style="background-color: #a31b1b"></span>
+              </div>
+              <a href="productDetails.html" class="price">52$</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-left">
+        <a href="index.html">Contact us</a>
+      </div>
+      <!-- Icons facebook, X, Instagram -->
+      <div class="footer-right">
+        <p>Follow us:</p>
+        <a href="https://facebook.com">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

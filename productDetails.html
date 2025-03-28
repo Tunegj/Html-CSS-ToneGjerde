@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductDetails</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/73d0fb8acd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="RainyDays_Logo.png" alt="Rainy Days Logo" class="logo" />
+      </a>
+      <div class="header-container">
+        <input type="text" placeholder="Search for products..." id="search" />
+      </div>
+      <div class="header-icons">
+        <a href="construction.html" class="icon-container">
+          <i class="fa-solid fa-circle-user"></i>
+          <span>My account</span>
+        </a>
+        <a href="cart.html" class="icon-container">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>My cart</span>
+        </a>
+      </div>
+    </header>
+    <nav>
+      <!-- <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <label for="menu-toggle" class="close">&#10006;</label> -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Women</a></li>
+        <li><a href="products.html">Men</a></li>
+        <li><a href="products.html">SALE</a></li>
+        <li><a href="index.html">About us</a></li>
+      </ul>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <main class="product-details">
+      <!-- LEFT COLUMN: Product Image -->
+      <div class="left-column">
+        <img
+          src="RainyDays_Jacket7.jpg"
+          alt="Rushmore Fleece"
+          class="Rushmore"
+        />
+      </div>
+
+      <!-- MIDDLE COLUMN: Product Info -->
+      <div class="middle-column">
+        <h1>Rushmore Fleece</h1>
+        <h2>$49</h2>
+        <p>
+          Stay warm with the Rushmore Fleece Jacket. Crafted from ultra-soft
+          fleece, this lightweight yet insulating layer is perfect for crisp
+          morning hikes or cozy evenings by the fire...
+        </p>
+        <div class="product-options">
+          <select required name="size" id="size">
+            <option value="" selected disabled hidden>Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <select required name="colour" id="colour">
+            <option value="" selected disabled hidden>Colour</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+          </select>
+        </div>
+        <div class="button-container">
+          <a href="cart.html" class="add-button">Add to cart</a>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Recommendations -->
+      <aside class="right-column recommendations">
+        <h2>You might also like</h2>
+        <div class="recommendations-grid">
+          <div class="rec-img">
+            <img src="RainyDays_Jacket3.jpg" alt="Everglade Jacket" />
+            <div class="rec-description">
+              <h3>Everglades Jacket</h3>
+              <p>Jacket with a light...</p>
+              <a href="ProductDetails.html" class="see_more">See more...</a>
+            </div>
+          </div>
+          <div class="rec-img">
+            <img src="RainyDays_Jacket2.jpg" alt="Redwood Jacket" />
+            <div class="rec-description">
+              <p>Redwood Jacket</p>
+              <p>Light jacket with...</p>
+              <a href="ProductDetails.html" class="see_more">See more...</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footer-left">
+        <a href="index.html">Contact us</a>
+      </div>
+      <!-- Icons facebook, X, Instagram -->
+      <div class="footer-right">
+        <p>Follow us:</p>
+        <a href="https://facebook.com">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
