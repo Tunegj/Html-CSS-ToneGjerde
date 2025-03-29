@@ -58,56 +58,49 @@
     <main class="cart-page">
       <h1>CART</h1>
       <div class="cart-grid">
-        <!-- LEFT SIDE -->
         <div class="cart-left">
-          <h2>Your products</h2>
-
+          <h2>Your products:</h2>
+          <hr class="separator" />
           <div class="product-box">
             <img
               src="RainyDays_Jacket7.jpg"
               alt="Rushmoore Fleece"
               class="cart-img"
             />
-
             <div class="product-info">
               <h3>Rushmoore Fleece</h3>
               <p>Size: M</p>
               <p>Colour: Green</p>
               <p class="product-price">32$</p>
             </div>
+            <div class="total-box">
+              <h3>Total amount:</h3>
+              <p class="total-amount">32$</p>
+            </div>
           </div>
-          <div class="total-box">
-            <h3>Total amount:</h3>
-            <p class="total-amount">32$</p>
-          </div>
-        </div>
-
-        <!-- RIGHT SIDE -->
-        <div class="cart-right">
+          <hr class="separator" />
           <div class="member-box">
             <h2>Are you a member?</h2>
             <p class="member-text">
-              As a member you will receive exclusive offers and be part of our
-              rewards program
+              As a member you will receive <b>exclusive</b> offers and be part
+              of our rewards program. <br />Sign up today and get free shipping!
             </p>
-
-            <div class="membership-options">
-              <label
-                ><input type="radio" name="member" /> Yes, login/register</label
-              >
-              <label
-                ><input type="radio" name="member" /> Continue as guest</label
-              >
-            </div>
-
-            <div class="checkout-button">
-              <a href="payment.html">Checkout</a>
-            </div>
+          </div>
+          <fieldset class="membership-options">
+            <label>
+              <input type="radio" name="member" />
+              Yes,login/register</label
+            >
+            <label>
+              <input type="radio" name="member" /> Continue as guest</label
+            >
+          </fieldset>
+          <div class="checkout-button">
+            <a href="payment.html">Checkout</a>
           </div>
         </div>
       </div>
     </main>
-
     <footer>
       <div class="footer-left">
         <a href="index.html">Contact us</a>
