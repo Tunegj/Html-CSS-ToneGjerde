@@ -23,20 +23,30 @@
         <input type="text" placeholder="Search for products..." id="search" />
       </div>
       <div class="header-icons">
-        <a href="construction.html" class="icon-container">
-          <i class="fa-solid fa-circle-user"></i>
-          <span>My account</span>
-        </a>
-        <a href="cart.html" class="icon-container">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span>My cart</span>
-        </a>
+        <input type="checkbox" id="menu-toggle" />
+        <div class="mobile-icons">
+          <a href="construction.html" class="icon-container">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>My account</span>
+          </a>
+          <a href="cart.html" class="icon-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>My cart</span>
+          </a>
+          <label for="menu-toggle" class="hamburger">&#9776;</label>
+          <label for="menu-toggle" class="close">&#10006;</label>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Women</a></li>
+          <li><a href="products.html">Men</a></li>
+          <li><a href="products.html">SALE</a></li>
+          <li><a href="index.html">About us</a></li>
+        </ul>
       </div>
     </header>
     <nav>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
-      <label for="menu-toggle" class="close">&#10006;</label>
+      <a href="products.html" class="final-sale">FINAL SALE! Up to 70% off</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Women</a></li>

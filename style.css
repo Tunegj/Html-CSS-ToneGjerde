@@ -51,7 +51,6 @@ header {
 .logo {
   max-width: 150px;
   height: auto;
-  height: fit-content;
   margin-left: 15px;
 }
 
@@ -124,9 +123,7 @@ nav ul a:hover {
 }
 
 header #menu-toggle,
-header .hamburger,
-header .close,
-header ul,
+ul,
 .final-sale {
   display: none;
 }
@@ -756,6 +753,13 @@ main success {
 /* Payment */
 
 /* Success */
+
+@media (min-width: 769px) {
+  .hamburger,
+  .close {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .text-box {
     max-width: 400px;
@@ -763,26 +767,59 @@ main success {
 }
 
 @media (max-width: 480px) {
-  /* Hide the full text, show the short text */
-  .index .full-text {
+  /* Header for mobile */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header-container {
+    order: 2;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+  }
+
+  .mobile-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: -60px;
+  }
+
+  #search {
+    width: 100%;
+    padding: 8px 8px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+  }
+
+  .icon-container span {
     display: none;
   }
-  .index .mobile-text {
-    display: block;
+
+  .icon-container i {
+    size: 1rem;
   }
 
-  /* If you want to reduce padding so the image is more visible */
-  .index {
-    background-image: url(ashley-knedler-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .logo {
+    max-width: 80px;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 15px;
   }
 
-  /* You can also let the text-box stretch wider if you like */
-  .text-box {
-    max-width: 90%;
-  }
-
+  /* Navbar / hamburger menu*/
   nav ul {
     display: none;
   }
@@ -790,5 +827,75 @@ main success {
   nav .final-sale {
     display: block;
     color: #f8f8f8;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #94b9af;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    padding: 20px;
+    list-style: none;
+    z-index: 999;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  /* Show menu on toggle */
+  #menu-toggle:checked + .mobile-icons + .nav-links {
+    display: flex;
+  }
+
+  .hamburger,
+  .close {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: none;
+    color: white;
+  }
+
+  #menu-toggle:checked ~ .hamburger {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .close {
+    display: block;
+  }
+
+  /* Index for mobile */
+  .index .full-text {
+    display: none;
+  }
+  .index .mobile-text {
+    display: block;
+  }
+
+  .index {
+    background-image: url(ashley-knedler-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
