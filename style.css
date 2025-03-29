@@ -1,26 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
 
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "montserrat", "roboto-slab" "sans-serif";
+  font-family: "Montserrat", "Roboto-slab", sans-serif, serif;
 }
 
 /* Global Styles */
-
-h1 h2 h3 {
-  font-family: "montserrat";
-}
-
-p {
-  font-family: "roboto slab";
-}
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 html,
@@ -31,6 +32,10 @@ body {
 main {
   flex: 1;
 }
+
+/* HEADER */
+
+/* General & Layout */
 
 header {
   background-color: #94b9af;
@@ -48,11 +53,15 @@ header {
   justify-content: center;
 }
 
+/* Logo */
+
 .logo {
   max-width: 150px;
   height: auto;
   margin-left: 15px;
 }
+
+/* Searchbar */
 
 #search {
   width: 100%;
@@ -69,6 +78,8 @@ header {
   gap: 30px;
   margin-right: 15px;
 }
+
+/* Icons */
 
 .icon-container {
   display: flex;
@@ -89,13 +100,14 @@ header {
 }
 
 .icon-container span {
-  font-family: "roboto slab", serif;
   font-size: 0.875rem;
   margin-top: 5px;
   padding: 5px;
   white-space: nowrap;
   text-transform: uppercase;
 }
+
+/* NAVBAR */
 
 nav {
   background-color: #29335c;
@@ -112,7 +124,6 @@ nav ul {
 }
 
 nav ul a {
-  font-family: "roboto slab", serif;
   font-size: 1.125rem;
   color: #fff6f6;
   text-decoration: none;
@@ -122,11 +133,15 @@ nav ul a:hover {
   text-decoration: underline;
 }
 
+/* Navbar mobile */
+
 header #menu-toggle,
 ul,
 .final-sale {
   display: none;
 }
+
+/* FOOTER */
 
 footer {
   background-color: #29335c;
@@ -138,7 +153,6 @@ footer {
   width: 100%;
   color: #fff6f6;
   padding: 10px;
-  font-family: "roboto slab";
   font-weight: normal;
   font-size: 1.125rem;
 }
@@ -160,7 +174,9 @@ footer a {
   margin-right: 20px;
 }
 
-/* Index page */
+/* ADD STYLING FOR FOOTER ICONS HERE? */
+
+/* INDEX PAGE */
 
 .index {
   position: relative;
@@ -188,7 +204,6 @@ footer a {
 }
 
 .text-box p {
-  font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
   line-height: 1.6;
   color: #000;
@@ -197,6 +212,8 @@ footer a {
 .index .full-text {
   display: block;
 }
+
+/* Shorter text for mobile */
 
 .index .mobile-text {
   display: none;
@@ -213,7 +230,6 @@ footer a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-family: "Roboto Slab", serif;
   font-weight: bold;
   color: #000;
   font-size: 1rem;
@@ -224,30 +240,20 @@ footer a {
 }
 
 .index p {
-  font-family: "roboto slab";
   font-size: 1.125rem;
   display: flex;
   align-items: center;
 }
 
-/* Products Page */
+/* PRODUCTS PAGE */
 
 .products-page h1 {
-  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   text-align: center;
   margin: 40px 0 20px;
 }
 
-.desktop-description {
-  font-family: "Roboto Slab", serif;
-  font-size: 0.875rem;
-  margin-left: 30px;
-}
-
-.mobile-description {
-  display: none;
-}
+/* Filter and sort by */
 
 .dropdown {
   display: flex;
@@ -259,11 +265,12 @@ footer a {
 .dropdown select {
   max-width: 140px;
   padding: 6px 10px;
-  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
 }
 
-/* PRODUCT GRID */
+.page-status {
+  /* Position it better */
+}
 
 .product-grid {
   display: grid;
@@ -275,7 +282,7 @@ footer a {
   box-sizing: border-box;
 }
 
-/* PRODUCT CARD */
+/* Product card */
 
 .product {
   display: flex;
@@ -288,7 +295,7 @@ footer a {
   overflow: hidden;
 }
 
-/* IMAGE */
+/* Images */
 
 .image-container {
   flex-shrink: 0;
@@ -308,7 +315,7 @@ footer a {
   object-fit: contain;
 }
 
-/* TEXT + INFO */
+/* Product information */
 
 .product-info {
   display: flex;
@@ -321,7 +328,6 @@ footer a {
 }
 
 .product-details {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   color: #000;
@@ -335,7 +341,6 @@ footer a {
 }
 
 .product-info p {
-  font-family: "Roboto Slab", serif;
   font-size: 0.875rem;
   margin: 0;
 }
@@ -346,11 +351,21 @@ footer a {
   font-size: 0.75rem;
 }
 
-/* COLORS + PRICES */
+.desktop-description {
+  font-size: 0.875rem;
+  margin-left: 30px;
+}
+
+/* Shorter description for mobile */
+
+.mobile-description {
+  display: none;
+}
+
+/* Color dots and price */
 
 .price-dot {
   display: flex;
-
   align-items: center;
   width: 100%;
   margin-top: 8px;
@@ -376,8 +391,6 @@ footer a {
   border-radius: 50%;
   border: 1px solid #000;
 }
-
-/* PRICING STYLES */
 
 .price,
 .old-price,
@@ -412,7 +425,7 @@ footer a {
   align-items: flex-end;
 }
 
-/* HOVER EFFECT */
+/* Hover effect product card */
 
 .product:hover {
   transform: translateY(-2px);
@@ -420,7 +433,7 @@ footer a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* PAGINATION */
+/* Page navigation */
 
 .page-navigation {
   text-align: center;
@@ -456,17 +469,18 @@ footer a {
   background: #333;
   color: white;
 }
+
 /* MAIN PRODUCT DETAILS LAYOUT */
+
 .product-detail-layout {
   max-width: 1200px;
   margin: 50px auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr; /* 3 columns: image, info, recommendations */
+  grid-template-columns: 2fr 2fr 1fr;
   gap: 40px;
 }
 
-/* LEFT COLUMN: Image */
 .left-column img {
   width: 100%;
   max-width: 350px;
@@ -474,16 +488,17 @@ footer a {
   display: block;
 }
 
-/* MIDDLE COLUMN: Product Info */
 .middle-column h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 .middle-column h2 {
   font-size: 1.25rem;
   color: #666;
   margin-bottom: 20px;
 }
+
 .middle-column p {
   font-weight: normal;
   line-height: 1.5;
@@ -491,7 +506,8 @@ footer a {
   max-width: 300px;
 }
 
-/* Product options (size, color) */
+/* Size and color selector */
+
 .product-options {
   display: flex;
   gap: 10px;
@@ -505,15 +521,17 @@ footer a {
   height: auto;
 }
 
-/* Button */
 .button-container {
   margin-top: 100px;
   margin-bottom: 20px;
 }
 
+/* For mobile */
 .continue-link {
   display: none;
 }
+
+/* For mobile only */
 
 .go-to-cart {
   display: none;
@@ -528,30 +546,36 @@ footer a {
   font-weight: bold;
 }
 
-/* RIGHT COLUMN: Recommendations */
+/* Recommendations */
+
 .recommendations {
   background-color: #f6e1b8;
   padding: 20px;
   border-radius: 10px;
-  align-self: start; /* ensures it starts at the top of the column */
+  align-self: start;
 }
-.recommendations h2 {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
+
 .recommendations-grid {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
+
+.recommendations h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
 .rec-img {
   display: flex;
   gap: 10px;
 }
+
 .rec-img img {
   max-width: 70px;
   border-radius: 2px;
 }
+
 .rec-description p {
   font-size: 0.875rem;
   font-weight: normal;
@@ -561,14 +585,16 @@ footer a {
 .rec-description h3 {
   font-size: 1rem;
 }
+
 .see_more {
   font-size: 0.75rem;
   text-decoration: underline;
   color: #000;
 }
 
+/* CART PAGE */
+
 .cart-page h1 {
-  font-family: "montserrat";
   font-size: 2.25rem;
   margin: 30px;
 }
@@ -643,7 +669,6 @@ footer a {
 .member-box h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "montserrat", sans-serif;
 }
 
 .member-box {
@@ -692,12 +717,11 @@ fieldset.membership-options {
   font-weight: bold;
 }
 
-/* Payment */
+/* PAYMENT PAGE */
 
 .checkout-page {
   display: flex;
   justify-content: center;
-  /* background: linear-gradient(to right, #f2f2f2 60%, #fff 40%); */
   max-width: 1200px;
   margin: 20px;
   padding: 30px 20px;
@@ -720,7 +744,7 @@ fieldset.membership-options {
   gap: 40px;
 }
 
-/* LEFT SECTION */
+/* Personal details */
 .checkout-left {
   background-color: #f2f2f2;
   padding: 30px;
@@ -773,7 +797,8 @@ fieldset.membership-options {
   max-width: 180px;
 }
 
-/* RIGHT SECTION */
+/* Payment details */
+
 .checkout-right {
   display: flex;
   flex-direction: column;

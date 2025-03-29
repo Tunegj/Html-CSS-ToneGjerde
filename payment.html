@@ -21,18 +21,23 @@
       <div class="header-icons">
         <input type="checkbox" id="menu-toggle" />
         <div class="mobile-icons">
-          <a href="construction.html" class="icon-container">
+          <a
+            href="construction.html"
+            class="icon-container"
+            aria-label="My account"
+          >
             <i class="fa-solid fa-circle-user"></i>
             <span>My account</span>
           </a>
-          <a href="cart.html" class="icon-container">
+          <a href="cart.html" class="icon-container" aria-label="My cart">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>My cart</span>
           </a>
           <label for="menu-toggle" class="hamburger">&#9776;</label>
           <label for="menu-toggle" class="close">&#10006;</label>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" aria-hidden="true">
+          <!-- Change class to mobile-nav, check if aria-hidden="true" is in the right place, and toggle it in media queries -->
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Women</a></li>
           <li><a href="products.html">Men</a></li>

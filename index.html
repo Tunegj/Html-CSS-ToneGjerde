@@ -9,12 +9,6 @@
       src="https://kit.fontawesome.com/73d0fb8acd.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
     <header>
       <a href="index.html">
         <img src="RainyDays_Logo.png" alt="Rainy Days Logo" class="logo" />
@@ -25,18 +19,23 @@
       <div class="header-icons">
         <input type="checkbox" id="menu-toggle" />
         <div class="mobile-icons">
-          <a href="construction.html" class="icon-container">
+          <a
+            href="construction.html"
+            class="icon-container"
+            aria-label="My account"
+          >
             <i class="fa-solid fa-circle-user"></i>
             <span>My account</span>
           </a>
-          <a href="cart.html" class="icon-container">
+          <a href="cart.html" class="icon-container" aria-label="My cart">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>My cart</span>
           </a>
           <label for="menu-toggle" class="hamburger">&#9776;</label>
           <label for="menu-toggle" class="close">&#10006;</label>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" aria-hidden="true">
+          <!-- Change class to mobile-nav, check if aria-hidden="true" is in the right place, and toggle it in media queries -->
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Women</a></li>
           <li><a href="products.html">Men</a></li>
@@ -56,7 +55,7 @@
       </ul>
     </nav>
     <main class="index">
-      <div class="text-box">
+      <section class="text-box">
         <p class="full-text">
           Rainy Days specialize in high-quality raincoats and jackets designed
           to keep you comfortable in any weather, so you can focus on enjoying
@@ -71,7 +70,7 @@
           <a href="construction.html">see more...</a>
         </p>
         <a href="products.html" class="shop-button">SHOP NOW</a>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="footer-left">
