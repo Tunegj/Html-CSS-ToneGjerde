@@ -695,22 +695,49 @@ fieldset.membership-options {
 /* Payment */
 
 .checkout-page {
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(to right, #f2f2f2 60%, #fff 40%); */
   max-width: 1200px;
   margin: 20px;
   padding: 30px 20px;
 }
 
+.checkout-page select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.checkout-page h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
 .checkout-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.2fr 1.2fr;
   gap: 40px;
 }
 
 /* LEFT SECTION */
 .checkout-left {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.checkout-left input,
+.checkout-left select,
+.checkout-right input {
+  max-width: 400px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .personal-details,
@@ -723,11 +750,27 @@ fieldset.membership-options {
 .phone-input {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+.phone-input select {
+  max-width: 80px;
+}
+
+.shipping-details select {
+  max-width: 120px;
 }
 
 .zip-city {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+.phone-input input,
+.zip-city input {
+  width: 100%;
+  max-width: 180px;
 }
 
 /* RIGHT SECTION */
@@ -735,12 +778,35 @@ fieldset.membership-options {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 100px;
+  padding-top: 20px;
 }
 
 .payment-details {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
+}
+
+.payment-details input[type="text"],
+.payment-details input[type="number"] {
+  width: 100%;
+}
+
+.payment-details label {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.payment-details input[type="radio"] {
+  accent-color: #000;
+  /* margin-right: 8px; */
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .security {
@@ -748,20 +814,31 @@ fieldset.membership-options {
   gap: 10px;
 }
 
+.security input {
+  width: 100%;
+}
+
 .button-group {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 15px;
+  margin-top: 30px;
 }
 
 .confirm-button,
 .cancel-button {
+  min-width: 100px;
   display: inline-block;
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
+}
+
+.button-group a {
+  text-decoration: none;
+  color: #000;
 }
 
 .confirm-button {
