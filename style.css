@@ -457,7 +457,7 @@ footer a {
   color: white;
 }
 /* MAIN PRODUCT DETAILS LAYOUT */
-.product-details {
+.product-detail-layout {
   max-width: 1200px;
   margin: 50px auto;
   padding: 20px;
@@ -510,6 +510,15 @@ footer a {
   margin-top: 100px;
   margin-bottom: 20px;
 }
+
+.continue-link {
+  display: none;
+}
+
+.go-to-cart {
+  display: none;
+}
+
 .add-button {
   background-color: #43aa8b;
   color: #000;
@@ -1036,12 +1045,121 @@ main success {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
   }
 
   .sale-pricing span {
     display: none;
+  }
+
+  /* Mobile - productDetails */
+
+  .left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* border: 1px solid #000; */
+    margin-bottom: 20px;
+  }
+
+  .left-column img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    /* border-radius: 8px; */
+  }
+
+  .product-detail-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .product-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .product-options select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    font-family: "robot slab", sans-serif;
+    background-color: #fff;
+    appearance: none;
+  }
+
+  .add-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .continue-link {
+    display: block;
+    font-size: 0.875rem;
+    text-decoration: underline;
+    color: #333;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .go-to-cart {
+    display: block;
+    background-color: #29335c;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .recommendations {
+    margin-top: 20px;
+    background-color: #f6e1b8;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .recommendations h2 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .recommendations-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .rec-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 280px;
   }
 }
