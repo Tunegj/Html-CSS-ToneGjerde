@@ -15,17 +15,22 @@
       <a href="index.html">
         <img src="RainyDays_Logo.png" alt="Rainy Days Logo" class="logo" />
       </a>
-      <div class="header-container">
+      <form action="#" method="get" class="header-container">
+        <!-- Kopier til alle html -->
         <input type="text" placeholder="Search for products..." id="search" />
-      </div>
+      </form>
       <div class="header-icons">
         <input type="checkbox" id="menu-toggle" />
         <div class="mobile-icons">
-          <a href="construction.html" class="icon-container">
+          <a
+            href="construction.html"
+            class="icon-container"
+            aria-label="My account"
+          >
             <i class="fa-solid fa-circle-user"></i>
             <span>My account</span>
           </a>
-          <a href="cart.html" class="icon-container">
+          <a href="cart.html" class="icon-container" aria-label="My cart">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>My cart</span>
           </a>
@@ -69,174 +74,182 @@
         </select>
       </div>
       <p class="page-status">Showing 6 out of 56 products</p>
-      <div class="product-grid">
-        <!-- Redwood Jacket -->
-        <div class="product">
-          <div class="image-container">
-            <img
-              src="RainyDays_Jacket2.jpg"
-              alt="Redwood Jacket"
-              class="product-img"
-            />
-          </div>
-          <div class="product-info">
-            <a href="ProductDetails.html" class="product-details"
-              >Redwood Jacket</a
-            >
-            <p class="desktop-description">Light jacket with 2 layers and...</p>
-            <p class="mobile-description">Shell jacket, polyester</p>
-            <a href="ProductDetails.html" class="see-more">See more...</a>
-            <div class="price-dot">
-              <div class="color-dots">
-                <span class="dot" style="background-color: #94b9af"></span>
-                <span class="dot" style="background-color: #f90a0a"></span>
-                <span class="dot" style="background-color: #000"></span>
-                <span class="dot" style="background-color: #d4d8dd"></span>
-              </div>
-              <a href="productDetails.html" class="price">34$</a>
+      <section class="product-selection">
+        <div class="product-grid">
+          <!-- Redwood Jacket -->
+          <section class="product">
+            <div class="image-container">
+              <img
+                src="RainyDays_Jacket2.jpg"
+                alt="Redwood Jacket"
+                class="product-img"
+              />
             </div>
-          </div>
-        </div>
+            <div class="product-info">
+              <a href="productDetails.html" class="product-details"
+                >Redwood Jacket</a
+              >
+              <p class="desktop-description">
+                Light jacket with 2 layers and...
+              </p>
+              <p class="mobile-description">Shell jacket, polyester</p>
+              <a href="productDetails.html" class="see-more">See more...</a>
+              <div class="price-dot">
+                <div class="color-dots">
+                  <span class="dot" style="background-color: #94b9af"></span>
+                  <span class="dot" style="background-color: #f90a0a"></span>
+                  <span class="dot" style="background-color: #000"></span>
+                  <span class="dot" style="background-color: #d4d8dd"></span>
+                </div>
+                <a href="productDetails.html" class="price">34$</a>
+              </div>
+            </div>
+          </section>
 
-        <!-- Everglade Jacket (SALE) -->
-        <div class="product">
-          <div class="image-container">
-            <img
-              src="RainyDays_Jacket3.jpg"
-              alt="Everglade Jacket"
-              class="product-img"
-            />
-          </div>
-          <div class="product-info">
-            <a href="ProductDetails.html" class="product-details"
-              >Everglade Jacket</a
-            >
-            <p class="desktop-description">Jacket with a light layer...</p>
-            <p class="mobile-description">Shell jacket, polyester</p>
-            <a href="ProductDetails.html" class="see-more">See more...</a>
-            <div class="price-dot">
-              <div class="color-dots">
-                <span class="dot" style="background-color: #922929"></span>
-                <span class="dot" style="background-color: #1b8a68"></span>
-              </div>
-              <div class="sale-pricing">
-                <a href="productDetails.html" class="old-price">38$</a>
-                <span class="new-price">NEW PRICE</span>
-                <a href="productDetails.html" class="sale">28$</a>
+          <!-- Everglade Jacket (SALE) -->
+          <section class="product">
+            <div class="image-container">
+              <img
+                src="RainyDays_Jacket3.jpg"
+                alt="Everglade Jacket"
+                class="product-img"
+              />
+            </div>
+            <div class="product-info">
+              <a href="productDetails.html" class="product-details"
+                >Everglade Jacket</a
+              >
+              <p class="desktop-description">Jacket with a light layer...</p>
+              <p class="mobile-description">Shell jacket, polyester</p>
+              <a href="productDetails.html" class="see-more">See more...</a>
+              <div class="price-dot">
+                <div class="color-dots">
+                  <span class="dot" style="background-color: #922929"></span>
+                  <span class="dot" style="background-color: #1b8a68"></span>
+                </div>
+                <div class="sale-pricing">
+                  <a href="productDetails.html" class="old-price">38$</a>
+                  <span class="new-price">NEW PRICE</span>
+                  <a href="productDetails.html" class="sale">28$</a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        <!-- Rushmore Jacket -->
-        <div class="product">
-          <div class="image-container">
-            <img
-              src="RainyDays_Jacket7.jpg"
-              alt="Rushmore Jacket"
-              class="product-img"
-            />
-          </div>
-          <div class="product-info">
-            <a href="ProductDetails.html" class="product-details"
-              >Rushmore Jacket</a
-            >
-            <p class="desktop-description">Fleece jacket with the latest...</p>
-            <p class="mobile-description">Fleece jacket</p>
-            <a href="ProductDetails.html" class="see-more">See more...</a>
-            <div class="price-dot">
-              <div class="color-dots">
-                <span class="dot" style="background-color: #107056"></span>
-                <span class="dot" style="background-color: #574b4b"></span>
-                <span class="dot" style="background-color: #521d97"></span>
-              </div>
-              <a href="productDetails.html" class="price">32$</a>
+          <!-- Rushmore Jacket -->
+          <section class="product">
+            <div class="image-container">
+              <img
+                src="RainyDays_Jacket7.jpg"
+                alt="Rushmore Jacket"
+                class="product-img"
+              />
             </div>
-          </div>
-        </div>
+            <div class="product-info">
+              <a href="productDetails.html" class="product-details"
+                >Rushmore Jacket</a
+              >
+              <p class="desktop-description">
+                Fleece jacket with the latest...
+              </p>
+              <p class="mobile-description">Fleece jacket</p>
+              <a href="productDetails.html" class="see-more">See more...</a>
+              <div class="price-dot">
+                <div class="color-dots">
+                  <span class="dot" style="background-color: #107056"></span>
+                  <span class="dot" style="background-color: #574b4b"></span>
+                  <span class="dot" style="background-color: #521d97"></span>
+                </div>
+                <a href="productDetails.html" class="price">32$</a>
+              </div>
+            </div>
+          </section>
 
-        <!-- Big Bend Jacket -->
-        <div class="product">
-          <div class="image-container">
-            <img
-              src="RainyDays_Jacket1.jpg"
-              alt="Big Bend Jacket"
-              class="product-img"
-            />
-          </div>
-          <div class="product-info">
-            <a href="ProductDetails.html" class="product-details"
-              >Big Bend Jacket</a
-            >
-            <p class="desktop-description">Waterproof jacket for a sea...</p>
-            <p class="mobile-description">Waterprood, 3 layer jacket</p>
-            <a href="ProductDetails.html" class="see-more">See more...</a>
-            <div class="price-dot">
-              <div class="color-dots">
-                <span class="dot" style="background-color: #f4d35e"></span>
-                <span class="dot" style="background-color: #43aa8b"></span>
-              </div>
-              <a href="productDetails.html" class="price">56$</a>
+          <!-- Big Bend Jacket -->
+          <section class="product">
+            <div class="image-container">
+              <img
+                src="RainyDays_Jacket1.jpg"
+                alt="Big Bend Jacket"
+                class="product-img"
+              />
             </div>
-          </div>
-        </div>
+            <div class="product-info">
+              <a href="productDetails.html" class="product-details"
+                >Big Bend Jacket</a
+              >
+              <p class="desktop-description">Waterproof jacket for a sea...</p>
+              <p class="mobile-description">Waterprood, 3 layer jacket</p>
+              <a href="productDetails.html" class="see-more">See more...</a>
+              <div class="price-dot">
+                <div class="color-dots">
+                  <span class="dot" style="background-color: #f4d35e"></span>
+                  <span class="dot" style="background-color: #43aa8b"></span>
+                </div>
+                <a href="productDetails.html" class="price">56$</a>
+              </div>
+            </div>
+          </section>
 
-        <!-- Canyon Jacket (SALE) -->
-        <div class="product">
-          <div class="image-container">
-            <img
-              src="RainyDays_Jacket4.jpg"
-              alt="Canyon Jacket"
-              class="product-img"
-            />
-          </div>
-          <div class="product-info">
-            <a href="ProductDetails.html" class="product-details"
-              >Canyon Jacket</a
-            >
-            <p class="desktop-description">Waterproof jacket with the...</p>
-            <p class="mobile-description">Waterproof, 2 layer jacket</p>
-            <a href="ProductDetails.html" class="see-more">See more...</a>
-            <div class="price-dot">
-              <div class="color-dots">
-                <span class="dot" style="background-color: #5869ae"></span>
-                <span class="dot" style="background-color: #9a4646"></span>
-              </div>
-              <div class="sale-pricing">
-                <a href="productDetails.html" class="old-price">38$</a>
-                <span class="new-price">NEW PRICE</span>
-                <a href="productDetails.html" class="sale">28$</a>
+          <!-- Canyon Jacket (SALE) -->
+          <section class="product">
+            <div class="image-container">
+              <img
+                src="RainyDays_Jacket4.jpg"
+                alt="Canyon Jacket"
+                class="product-img"
+              />
+            </div>
+            <div class="product-info">
+              <a href="productDetails.html" class="product-details"
+                >Canyon Jacket</a
+              >
+              <p class="desktop-description">Waterproof jacket with the...</p>
+              <p class="mobile-description">Waterproof, 2 layer jacket</p>
+              <a href="productDetails.html" class="see-more">See more...</a>
+              <div class="price-dot">
+                <div class="color-dots">
+                  <span class="dot" style="background-color: #5869ae"></span>
+                  <span class="dot" style="background-color: #9a4646"></span>
+                </div>
+                <div class="sale-pricing">
+                  <a href="productDetails.html" class="old-price">38$</a>
+                  <span class="new-price">NEW PRICE</span>
+                  <a href="productDetails.html" class="sale">28$</a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        <!-- Katmai Jacket -->
-        <div class="product">
-          <div class="image-container">
-            <img
-              src="RainyDays_Jacket6.jpg"
-              alt="Katmai Jacket"
-              class="product-img"
-            />
-          </div>
-          <div class="product-info">
-            <a href="ProductDetails.html" class="product-details"
-              >Katmai Jacket</a
-            >
-            <p class="desktop-description">3 layer jacket with the latest...</p>
-            <p class="mobile-description">Ski jacket</p>
-            <a href="ProductDetails.html" class="see-more">See more...</a>
-            <div class="price-dot">
-              <div class="color-dots">
-                <span class="dot" style="background-color: #c9a523"></span>
-                <span class="dot" style="background-color: #a31b1b"></span>
-              </div>
-              <a href="productDetails.html" class="price">52$</a>
+          <!-- Katmai Jacket -->
+          <section class="product">
+            <div class="image-container">
+              <img
+                src="RainyDays_Jacket6.jpg"
+                alt="Katmai Jacket"
+                class="product-img"
+              />
             </div>
-          </div>
+            <div class="product-info">
+              <a href="productDetails.html" class="product-details"
+                >Katmai Jacket</a
+              >
+              <p class="desktop-description">
+                3 layer jacket with the latest...
+              </p>
+              <p class="mobile-description">Ski jacket</p>
+              <a href="productDetails.html" class="see-more">See more...</a>
+              <div class="price-dot">
+                <div class="color-dots">
+                  <span class="dot" style="background-color: #c9a523"></span>
+                  <span class="dot" style="background-color: #a31b1b"></span>
+                </div>
+                <a href="productDetails.html" class="price">52$</a>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="footer-left">
@@ -245,14 +258,17 @@
       <!-- Icons facebook, X, Instagram -->
       <div class="footer-right">
         <p>Follow us:</p>
-        <a href="https://facebook.com">
+        <a href="https://facebook.com" aria-label="Follow us on Facebook">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
         <a href="https://x.com/">
-          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-x-twitter" aria-label="Follow us on X"></i>
         </a>
         <a href="https://instagram.com">
-          <i class="fa-brands fa-instagram"></i>
+          <i
+            class="fa-brands fa-instagram"
+            aria-label="Follow us on Instagram"
+          ></i>
         </a>
       </div>
     </footer>

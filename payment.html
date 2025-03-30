@@ -93,25 +93,37 @@
         <div class="checkout-right">
           <section class="payment-details">
             <h2>Payment Details</h2>
-            <label
-              ><input type="radio" name="payment" id="visa" />Visa/Debit</label
-            >
-            <label for=""
-              ><input
-                type="radio"
-                name="payment"
-                id="mastercard"
-              />Mastercard</label
-            >
-            <label for=""
-              ><input type="radio" name="payment" id="gift-card" />Gift
-              Card</label
-            >
-            <input type="text" name="" id="" placeholder="Cardholders name" />
-            <input type="number" name="" id="" placeholder="Card number" />
+            <label for="visa">
+              <input type="radio" name="payment" id="visa" /> Visa/Debit
+            </label>
+            <label for="mastercard">
+              <input type="radio" name="payment" id="mastercard" /> Mastercard
+            </label>
+            <label for="gift-card">
+              <input type="radio" name="payment" id="gift-card" /> Gift Card
+            </label>
+            <div class="card-details">
+              <input
+                type="text"
+                name="Cardholders name"
+                id=""
+                placeholder="Cardholders name"
+              />
+              <input
+                type="number"
+                name="Card number"
+                id=""
+                placeholder="Card number"
+              />
+            </div>
             <div class="security">
-              <input type="number" name="" id="" placeholder="DD/YY" />
-              <input type="number" name="" id="" placeholder="CVC" />
+              <input
+                type="number"
+                name="Date and year"
+                id=""
+                placeholder="DD/YY"
+              />
+              <input type="number" name="CVC" id="" placeholder="CVC" />
             </div>
           </section>
           <div class="button-group">
@@ -132,14 +144,17 @@
       <!-- Icons facebook, X, Instagram -->
       <div class="footer-right">
         <p>Follow us:</p>
-        <a href="https://facebook.com">
+        <a href="https://facebook.com" aria-label="Follow us on Facebook">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
         <a href="https://x.com/">
-          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-x-twitter" aria-label="Follow us on X"></i>
         </a>
         <a href="https://instagram.com">
-          <i class="fa-brands fa-instagram"></i>
+          <i
+            class="fa-brands fa-instagram"
+            aria-label="Follow us on Instagram"
+          ></i>
         </a>
       </div>
     </footer>
