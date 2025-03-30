@@ -28,7 +28,7 @@ header {
   width: 100%;
   height: 30px;
   max-width: 300px;
-  min-width: 200;
+  min-width: 200px;
   text-align: center;
   border-radius: var(--radius-pill);
   padding: var(--spacing-xs);
@@ -43,7 +43,7 @@ header {
 
 .mobile-icons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Ensure it stays horizontal on desktop */
   gap: 15px;
   align-items: center;
 }
@@ -81,4 +81,62 @@ header {
 .hamburger,
 .close {
   display: none;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.construction-icon {
+  font-size: 5rem;
+  color: #f1a208;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: var(--color-nav);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  max-height: 50px;
+  width: 100%;
+  color: var(--color-white);
+  padding: 10px;
+  font-weight: normal;
+  font-size: 1.125rem;
+  z-index: 1000;
+}
+
+footer a {
+  color: var(--color-white);
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  margin-left: var(--spacing-md);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-right: var(--spacing-md);
 }

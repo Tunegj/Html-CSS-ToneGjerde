@@ -37,7 +37,6 @@
           <label for="menu-toggle" class="close">&#10006;</label>
         </div>
         <ul class="nav-links" aria-hidden="true">
-          <!-- Change class to mobile-nav, check if aria-hidden="true" is in the right place, and toggle it in media queries -->
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Women</a></li>
           <li><a href="products.html">Men</a></li>
@@ -93,37 +92,28 @@
         <div class="checkout-right">
           <section class="payment-details">
             <h2>Payment Details</h2>
-            <label for="visa">
-              <input type="radio" name="payment" id="visa" /> Visa/Debit
-            </label>
-            <label for="mastercard">
-              <input type="radio" name="payment" id="mastercard" /> Mastercard
-            </label>
-            <label for="gift-card">
-              <input type="radio" name="payment" id="gift-card" /> Gift Card
-            </label>
+            <div class="payment-methods">
+              <div class="payment-option">
+                <input type="radio" id="visa" name="payment" />
+                <label for="visa">Visa/Debit</label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="mastercard" name="payment" />
+                <label for="mastercard">Mastercard</label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="giftcard" name="payment" />
+                <label for="giftcard">Gift Card</label>
+              </div>
+            </div>
+
             <div class="card-details">
-              <input
-                type="text"
-                name="Cardholders name"
-                id=""
-                placeholder="Cardholders name"
-              />
-              <input
-                type="number"
-                name="Card number"
-                id=""
-                placeholder="Card number"
-              />
+              <input type="text" placeholder="Cardholders name" />
+              <input type="number" placeholder="Card number" />
             </div>
             <div class="security">
-              <input
-                type="number"
-                name="Date and year"
-                id=""
-                placeholder="DD/YY"
-              />
-              <input type="number" name="CVC" id="" placeholder="CVC" />
+              <input type="date" placeholder="DD/YY" />
+              <input type="number" placeholder="CVC" />
             </div>
           </section>
           <div class="button-group">

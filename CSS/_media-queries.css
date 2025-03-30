@@ -1,18 +1,13 @@
-@media (min-width: 769px) {
-  .hamburger,
-  .close {
-    display: none;
-  }
-}
 @media (max-width: 768px) {
   .text-box {
     max-width: 400px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   /* Header for mobile */
   header {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
@@ -98,14 +93,13 @@
     font-size: 1rem;
   }
 
-  /* Show menu on toggle */
-  #menu-toggle:checked + .mobile-icons + .nav-links {
+  #menu-toggle:checked ~ .nav-links {
     display: flex;
   }
 
   .hamburger,
   .close {
-    display: block;
+    display: block !important;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 10px;
@@ -135,6 +129,7 @@
   }
   .index .mobile-text {
     display: block;
+    font-size: var(--font-lg);
   }
 
   .index {
@@ -290,23 +285,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
     /* border: 1px solid #000; */
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .left-column img {
-    max-width: 80%;
+    width: 70%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
-    /* border-radius: 8px; */
   }
 
   .product-detail-layout {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    gap: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
   }
 
   .product-options {
@@ -653,14 +650,16 @@
 
   /* Success page */
 
-  .success {
+  main.success {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 30px 20px;
-    text-align: center;
-    min-height: 150vh;
-    background-image: url(leo_visions-4KciTa1RB80-unsplashcompressed.jpg);
+    padding: 100px 20px 40px;
+    text-align: left;
+    background-image: none;
+    min-height: 100vh; /* Make it longer */
+    background-color: #a2b0a0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -669,6 +668,7 @@
   }
 
   .success h1 {
+    font-weight: bolder;
     font-size: 1.5rem;
     max-width: 300px;
     line-height: 1.5;

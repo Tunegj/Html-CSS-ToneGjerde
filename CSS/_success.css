@@ -34,7 +34,7 @@ main.success * {
 }
 
 main.success {
-  min-height: 120vh;
+  min-height: 140vh;
   overflow-y: auto;
 }
 
