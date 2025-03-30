@@ -1,0 +1,32 @@
+:root {
+  /* Color */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-accent: #f1a208;
+  --color-hover: #8d6108;
+  --color-background: #f2f2f2;
+  --color-header: #94b9af;
+  --color-nav: #29335c;
+  --color-sale: #f55;
+
+  /* Font */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Roboto Slab", serif;
+
+  /* Font sizes */
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 2rem;
+  --font-nav: 2rem;
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+
+  /* Border-radius */
+  --radius-pill: 25px;
+  --radius-sm: 5px;
+}

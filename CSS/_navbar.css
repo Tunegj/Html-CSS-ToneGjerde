@@ -1,0 +1,31 @@
+nav {
+  background-color: var(--color-nav);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xs);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+nav ul a {
+  font-size: 1.125rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar mobile */
+
+header #menu-toggle,
+ul,
+.final-sale {
+  display: none;
+}

@@ -1,0 +1,136 @@
+.product-detail-layout {
+  /* max-width: 1200px; */
+  width: 100%;
+  /* margin: var(--spacing-lg) auto; */
+  padding: var(--spacing-lg) var(--spacing-md);
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+  margin-left: var(--spacing-lg);
+}
+
+.left-column img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.middle-column h1 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+.middle-column h2 {
+  font-size: var(--font-md);
+  color: #666;
+  margin-bottom: var(--spacing-md);
+}
+
+.middle-column p {
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  max-width: 300px;
+}
+
+/* Size and color selector */
+
+.product-options {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+.product-options select {
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  min-width: 120px;
+  height: auto;
+  font-size: var(--font-sm);
+}
+
+.button-container {
+  margin-top: 100px;
+  margin-bottom: var(--spacing-md);
+}
+
+/* For mobile */
+.continue-link {
+  display: none;
+}
+
+/* For mobile only */
+
+.go-to-cart {
+  display: none;
+}
+
+.add-button {
+  background-color: #43aa8b;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Recommendations */
+
+.recommendations {
+  background-color: #f6e1b8;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  align-self: center;
+  max-width: 100%;
+  width: 70%;
+  margin-left: auto;
+  /* margin-top: 80px; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  /* margin-right: 0; */
+}
+
+.recommendations-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.recommendations h2 {
+  font-size: var(--font-lg);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rec-img {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+}
+
+.rec-img img {
+  max-width: 110px;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+.rec-description p {
+  font-size: var(--font-md);
+  font-weight: normal;
+  margin-bottom: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+.rec-description h3 {
+  font-size: var(--font-lg);
+  margin-bottom: 6px;
+}
+
+.see_more {
+  font-size: var(--font-sm);
+  text-decoration: underline;
+  color: #000;
+}

@@ -1,0 +1,30 @@
+footer {
+  background-color: var(--color-nav);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  max-height: 50px;
+  width: 100%;
+  color: var(--color-white);
+  padding: 10px;
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+
+footer a {
+  color: var(--color-white);
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  margin-left: var(--spacing-md);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-right: var(--spacing-md);
+}
