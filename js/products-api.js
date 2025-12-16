@@ -28,15 +28,17 @@ async function fetchProducts() {
         const imageAlt = product.image?.alt || product.title;
 
         return `
-    <article class ="product-card">
-      <div class="image-container">  
-        <img src="${imageUrl}" alt="${imageAlt}" class="product-img"/>
-      </div>
-      <div class="product-info">
-        <h3 class="product-details">${product.title}</h3>
-        <p class="price">${product.price}</p>
-      </div>
-    </article>
+        <a href="productDetails.html?id=${product.id}" class="product-link">
+          <article class ="product-card">
+            <div class="image-container">  
+              <img src="${imageUrl}" alt="${imageAlt}" class="product-img"/>
+            </div>
+            <div class="product-info">
+              <h3 class="product-details">${product.title}</h3>
+              <p class="price">${product.price}</p>
+            </div>
+          </article>
+        </a>
     `;
       })
       .join("");
@@ -44,6 +46,10 @@ async function fetchProducts() {
     console.error(err);
     grid.innerHTML =
       "<p class='error'>Failed to load products. Please try again later.</p>";
+
+    if (productCount) {
+      productCount.textContent = "";
+    }
   }
 }
 

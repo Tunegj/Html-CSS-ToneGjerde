@@ -1,129 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <base href="Html-CSS-ToneGjerde" />
-    <link rel="stylesheet" href="/Html-CSS-ToneGjerde/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/73d0fb8acd.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="RainyDays_Logo.png" alt="Rainy Days Logo" class="logo" />
-      </a>
-      <div class="header-container">
-        <input type="text" placeholder="Search for products..." id="search" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="RainyDays_Logo.png" alt="Rainy Days Logo" class="logo" />
+    </a>
+    <div class="header-container">
+      <input type="text" placeholder="Search for products..." id="search" />
+    </div>
+    <div class="header-icons">
+      <input type="checkbox" id="menu-toggle" />
+      <div class="mobile-icons">
+        <a href="construction.html" class="icon-container" aria-label="My account">
+          <i class="fa-solid fa-circle-user"></i>
+          <span>My account</span>
+        </a>
+        <a href="cart.html" class="icon-container" aria-label="My cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>My cart</span>
+        </a>
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <label for="menu-toggle" class="close">&#10006;</label>
       </div>
-      <div class="header-icons">
-        <input type="checkbox" id="menu-toggle" />
-        <div class="mobile-icons">
-          <a
-            href="construction.html"
-            class="icon-container"
-            aria-label="My account"
-          >
-            <i class="fa-solid fa-circle-user"></i>
-            <span>My account</span>
-          </a>
-          <a href="cart.html" class="icon-container" aria-label="My cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>My cart</span>
-          </a>
-          <label for="menu-toggle" class="hamburger">&#9776;</label>
-          <label for="menu-toggle" class="close">&#10006;</label>
-        </div>
-        <ul class="nav-links" aria-hidden="true">
-          <!-- Change class to mobile-nav, check if aria-hidden="true" is in the right place, and toggle it in media queries -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Women</a></li>
-          <li><a href="products.html">Men</a></li>
-          <li><a href="products.html">SALE</a></li>
-          <li><a href="index.html">About us</a></li>
-        </ul>
-      </div>
-    </header>
-    <nav>
-      <a href="products.html" class="final-sale">FINAL SALE! Up to 70% off</a>
-      <ul class="nav-links">
+      <ul class="nav-links" aria-hidden="true">
+        <!-- Change class to mobile-nav, check if aria-hidden="true" is in the right place, and toggle it in media queries -->
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Women</a></li>
         <li><a href="products.html">Men</a></li>
         <li><a href="products.html">SALE</a></li>
         <li><a href="index.html">About us</a></li>
       </ul>
-    </nav>
-    <main class="cart-page">
-      <h1>CART</h1>
-      <div class="cart-grid">
-        <div class="cart-left">
-          <h2>Your products:</h2>
-          <hr class="separator" />
-          <div class="product-box">
-            <img
-              src="RainyDays_Jacket7.jpg"
-              alt="Rushmoore Fleece"
-              class="cart-img"
-            />
-            <div class="product-info">
-              <h3>Rushmoore Fleece</h3>
-              <p>Size: M</p>
-              <p>Colour: Green</p>
-              <p class="product-price">32$</p>
-            </div>
-            <hr class="separator-mobile" />
-            <div class="total-box">
-              <h3>Total amount:</h3>
-              <p class="total-amount">32$</p>
-            </div>
+    </div>
+  </header>
+  <nav>
+    <a href="products.html" class="final-sale">FINAL SALE! Up to 70% off</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Women</a></li>
+      <li><a href="products.html">Men</a></li>
+      <li><a href="products.html">SALE</a></li>
+      <li><a href="index.html">About us</a></li>
+    </ul>
+  </nav>
+  <main class="cart-page">
+    <h1>CART</h1>
+    <div class="cart-grid">
+      <div class="cart-left">
+        <h2>Your products:</h2>
+        <hr class="separator" />
+        <div class="product-box">
+          <img src="RainyDays_Jacket7.jpg" alt="Rushmoore Fleece" class="cart-img" />
+          <div class="product-info">
+            <h3>Rushmoore Fleece</h3>
+            <p>Size: M</p>
+            <p>Colour: Green</p>
+            <p class="product-price">32$</p>
           </div>
-          <hr class="separator-desktop" />
-          <div class="member-box">
-            <h2>Are you a member?</h2>
-            <p class="member-text">
-              As a member you will receive <b>exclusive</b> offers and be part
-              of our rewards program. <br />Sign up today and get free shipping!
-            </p>
-          </div>
-          <fieldset class="membership-options">
-            <label>
-              <input type="radio" name="member" />
-              Yes,login/register</label
-            >
-            <label>
-              <input type="radio" name="member" /> Continue as guest</label
-            >
-          </fieldset>
-          <div class="checkout-button">
-            <a href="payment.html">Checkout</a>
+          <hr class="separator-mobile" />
+          <div class="total-box">
+            <h3>Total amount:</h3>
+            <p class="total-amount">32$</p>
           </div>
         </div>
+        <hr class="separator-desktop" />
+        <div class="member-box">
+          <h2>Are you a member?</h2>
+          <p class="member-text">
+            As a member you will receive <b>exclusive</b> offers and be part
+            of our rewards program. <br />Sign up today and get free shipping!
+          </p>
+        </div>
+        <fieldset class="membership-options">
+          <label>
+            <input type="radio" name="member" />
+            Yes,login/register</label>
+          <label>
+            <input type="radio" name="member" /> Continue as guest</label>
+        </fieldset>
+        <div class="checkout-button">
+          <a href="payment.html">Checkout</a>
+        </div>
       </div>
-    </main>
-    <footer>
-      <div class="footer-left">
-        <a href="index.html">Contact us</a>
-      </div>
-      <!-- Icons facebook, X, Instagram -->
-      <div class="footer-right">
-        <p>Follow us:</p>
-        <a href="https://facebook.com" aria-label="Follow us on Facebook">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="https://x.com/">
-          <i class="fa-brands fa-x-twitter" aria-label="Follow us on X"></i>
-        </a>
-        <a href="https://instagram.com">
-          <i
-            class="fa-brands fa-instagram"
-            aria-label="Follow us on Instagram"
-          ></i>
-        </a>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-left">
+      <a href="index.html">Contact us</a>
+    </div>
+    <!-- Icons facebook, X, Instagram -->
+    <div class="footer-right">
+      <p>Follow us:</p>
+      <a href="https://facebook.com" aria-label="Follow us on Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/">
+        <i class="fa-brands fa-x-twitter" aria-label="Follow us on X"></i>
+      </a>
+      <a href="https://instagram.com">
+        <i class="fa-brands fa-instagram" aria-label="Follow us on Instagram"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>

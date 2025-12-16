@@ -43,6 +43,12 @@
 
 /* Product card */
 
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .product-card {
   display: flex;
   flex-direction: row;
