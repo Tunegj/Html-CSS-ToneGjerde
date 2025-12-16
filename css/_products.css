@@ -43,7 +43,7 @@
 
 /* Product card */
 
-.product {
+.product-card {
   display: flex;
   flex-direction: row;
   align-items: center;
