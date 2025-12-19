@@ -29,6 +29,7 @@ Clone the repo:
 
 ```bash
 git clone https://github.com/Tunegj/Html-CSS-ToneGjerde.git
+```
 
 ## Contributing
 
